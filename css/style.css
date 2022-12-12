@@ -17,13 +17,17 @@ body{
 header{background-color: #3779dc; color: #fff;}
 header .header_top{border-bottom: 1px solid rgba(255,255,255,.2);}
 header .header_bot{border-bottom: 1px solid rgba(255,255,255,.2); position: relative;}
+
+header .header_top ul{ display: flex; justify-content: space-between; padding: 0 80px;}
+header .header_top ul a{ display: block; padding: 25px 15px 0; color: #fff; position: relative;}
+header .header_top ul li:last-child a{padding: 0 0 0 50px;}
+header .header_top ul a span{ position: absolute; bottom: 0; left: 0; display: inline-block; width: 55px; height: 34px; background: url("../images/character.png") no-repeat 13px bottom;}
+header .header_top ul li:last-child a span:after{position: absolute; content: ""; background: url("../images/h.png") no-repeat; width: 16px; height: 17px; }
 header .logo, header .sitemap{ position: absolute; z-index: 999;}
 header .logo{padding: 0 0 0 95px; line-height: 90px;}
 header .logo h1 span{font-size: 0; width: 95px; display: inline-block; height: 36px; background-image: url('../images/logo.svg'); vertical-align:middle}
 header .logo h1 a{color: #fff; font-size: 23px; font-weight: bold; letter-spacing: -0.07em; line-height: 1;}
 header .sitemap{right: 0; top: 0; padding: 0 35px 0 0; line-height: 90px;}
-header .header_top .site_link{ display: flex; justify-content: space-between; padding: 0 80px;}
-header .header_top .site_link a{ display: block; padding: 25px 15px 0; color: #fff;}
 header ul#nav{display: flex; justify-content: flex-end; padding: 0 70px;} 
 header ul#nav a{color: #fff; font-size: 18px;}
 .dep2 ul { display: block; } 
