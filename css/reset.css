@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; border: 0; box-sizing: border-box;} 
+ul,li,ol { list-style: none; padding: 0; margin: 0;} 
+a { text-decoration: none; color: #555;} 
+
+
+.cf::after{content: "";display: block; clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+.df{display: flex;}
+
+
+body { font-family: 'gothic','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,"Apple SD Gothic Neo","애플 SD 산돌고딕 Neo",sans-serif; color: #555; } 
