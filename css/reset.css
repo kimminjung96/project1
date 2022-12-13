@@ -1,12 +1,41 @@
-* { margin: 0; padding: 0; border: 0; box-sizing: border-box;} 
-ul,li,ol { list-style: none; padding: 0; margin: 0;} 
-a { text-decoration: none; color: #555;} 
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
 
-.cf::after{content: "";display: block; clear: both;}
-.fl{float: left;}
-.fr{float: right;}
-.df{display: flex;}
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.df {
+  display: flex;
+}
 
-
-body { font-family: 'gothic','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,"Apple SD Gothic Neo","애플 SD 산돌고딕 Neo",sans-serif; color: #555; } 
+body {
+  font-family: "Nanum Brush Script", cursive;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #555;
+}
