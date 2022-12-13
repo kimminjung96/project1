@@ -19,8 +19,8 @@ header .header_top{border-bottom: 1px solid rgba(255,255,255,.2);}
 header .header_bot{border-bottom: 1px solid rgba(255,255,255,.2); position: relative;}
 
 header .header_top ul{ display: flex; justify-content: space-between; padding: 0 80px;}
-header .header_top ul a{ display: block; padding: 25px 15px 0; color: #fff; position: relative;}
-header .header_top ul li:last-child a{padding: 0 0 0 50px;}
+header .header_top ul a{ display: block; padding: 25px 15px 6px; color: #fff; position: relative; letter-spacing: -1px;}
+header .header_top ul li:last-child a{padding: 25px 15px 6px 50px; }
 header .header_top ul a span{ position: absolute; bottom: 0; left: 0; display: inline-block; width: 55px; height: 34px; background: url("../images/character.png") no-repeat 13px bottom;}
 header .header_top ul li:last-child a span:after{position: absolute; content: ""; background: url("../images/h.png") no-repeat; width: 16px; height: 17px; }
 header .logo, header .sitemap{ position: absolute; z-index: 999;}
