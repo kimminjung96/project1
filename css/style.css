@@ -111,11 +111,14 @@ section h4+p { font-size: 16px; color: #555; letter-spacing: -0.03em; font-weigh
 .pick_btn .tab li {position: relative; width: 170px; margin: 0 8px; background-color: #71879b; line-height: 50px; padding: 0 24px; display: block; border-radius: 170px; text-align: right; } 
 .pick_btn .tab li a { width: 100%; display: block; color: #fff; } 
 
-#pick .inner { overflow: hidden; position: relative; height: 460px; } 
-#pick .inner>ul.df { justify-content: space-between; } 
-#pick .inner>ul.df li { width: 257px; overflow: hidden; height: 328px; border-radius: 18px; box-shadow: 10px 0 15px rgb(0 0 0 / 15%); /* margin-right: 28px; */}
+#pick .inner { overflow: hidden; position: relative; padding-bottom: 30px; } 
+
+#pick .inner>ul.df { justify-content: space-between; align-items: flex-end; margin-top: 50px;} 
+#pick .inner>ul.df li { width: 257px; overflow: hidden; height: 328px; border-radius: 18px; box-shadow: 10px 0 15px rgb(0 0 0 / 15%); /* margin-right: 28px; */ }
 /* #pick .inner>ul.df li:last-child{
   margin-right: 0;
 } */
-#pick .inner>ul.df li:nth-child(4){box-shadow: 10px 0 15px rgb(0 0 0 / 15%);}
-#pick .inner>ul.df li:nth-child(5){box-shadow: -15px 5px 15px rgb(0 0 0 / 15%);}
+#pick .inner>ul.df li:nth-child(1){margin: 0 0 100px;}
+#pick .inner>ul.df li:nth-child(2){margin: 0 0 50px;}
+#pick .inner>ul.df li:nth-child(4){box-shadow: 10px 0 15px rgb(0 0 0 / 15%); margin: 0 0 100px;}
+#pick .inner>ul.df li:nth-child(5){box-shadow: -15px 5px 15px rgb(0 0 0 / 15%); margin: 0 0 50px;}
