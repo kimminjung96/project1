@@ -1,5 +1,4 @@
-@charset "utf-8";
-/* layout */
+@charset "utf-8"; /* layout */
 .inner { width: 100%; max-width: 1400px; height: inherit; margin: auto; } 
 
 .width1400 { margin: auto; max-width: 1400px; width: 100%; } 
@@ -80,10 +79,43 @@ section#main::before { content: ""; display: block; background: #3779dc url("../
 section#main h4 { color: #fff; font-size: 24px; font-weight: 600; text-align: center; padding: 50px 0; } 
 section#main h4 span { font-size: 44px; font-weight: 300; } 
 section#main h4 .tit1:before { position: absolute; left: 670px; background-image: url(../images/mvisual_tit1.png); content: ""; display: block; width: 206px; height: 71px; } 
-section#main h4 .tit2:before { position: absolute; right: 625px; top: 36px; background-image: url(../images/mvisual_tit2.png); content: ""; display: block; width: 275px; height: 144px; }
+section#main h4 .tit2:before { position: absolute; right: 625px; top: 36px; background-image: url(../images/mvisual_tit2.png); content: ""; display: block; width: 275px; height: 144px; } 
 
-section#main .inner{padding: 0 99px; }
-section#main .slider .slider_img{width: 1200px; height: 667px; box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; overflow: hidden;}
-section#main .slider img { width: 100%; height: 100%; }
+section#main .inner { padding: 0 99px; } 
+section#main .slider .slider_img { width: 1200px; height: 667px; box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; overflow: hidden; } 
+section#main .slider img { width: 100%; height: 100%; } 
+section#main .slider .subject { display: flex; font-size: 20px; color: #000; margin: 30px 0 0 24px; line-height: 1; } 
+section#main .slider .subject b { color: #1053a5; position: relative; padding-right: 25px; font-size: 24px; font-weight: bold; letter-spacing: -1px; } 
+section#main .slider .subject b::before { content: ""; display: block; width: 1px; height: 18px; background-color: #7f7f7f; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); } 
+/* section#main .slider .subject .progress { height: 5px; width: 300px; position: absolute; } */
+section#main .slider .subject .main_prev { position: relative; width: 34px; height: 34px; background-color: #4d647a; border-radius: 50%; } 
+section#main .slider .subject .main_prev::before { position: absolute; top: 50%; width: 10px; height: 10px; border: 1px solid #fff; border-width: 2px 2px 0 0; content: ""; display: block; transform:rotate(222deg) } 
+section#main .slider .subject .main_stop { } 
+section#main .slider .subject .main_stop::before { } 
+section#main .slider .subject .main_mext { } 
+section#main .slider .subject .main_mext::before { } 
+section#main .slider .subject .main_more { } 
+section#main .slider .subject .main_more::before { } 
 
-.main_btn { width: 100%; position: absolute; display: flex; justify-content: space-between; top: 461px; z-index: -1; } 
+
+
+.main_btn { width: 100%; position: absolute; display: flex; justify-content: space-between; bottom: 180px; left: 0; z-index: -1; } 
+/* .btn_right { position: absolute; left: -180px; top: 0; } */
+
+section#pick { margin-bottom: 140px; padding-top: 90px; } 
+section h4 { font-size: 56px; color: #222; line-height: 1; text-align: center; font-weight: normal; margin-bottom: 5px; } 
+section h4 span { font-weight: 900; } 
+section h4+p { font-size: 16px; color: #555; letter-spacing: -0.03em; font-weight: 300; text-align: center; } 
+
+.pick_btn .tab { justify-content: center; margin: 24px 0; } 
+.pick_btn .tab li {position: relative; width: 170px; margin: 0 8px; background-color: #71879b; line-height: 50px; padding: 0 24px; display: block; border-radius: 170px; text-align: right; } 
+.pick_btn .tab li a { width: 100%; display: block; color: #fff; } 
+
+#pick .inner { overflow: hidden; position: relative; height: 460px; } 
+#pick .inner>ul.df { justify-content: space-between; } 
+#pick .inner>ul.df li { width: 257px; overflow: hidden; height: 328px; border-radius: 18px; box-shadow: 10px 0 15px rgb(0 0 0 / 15%); /* margin-right: 28px; */}
+/* #pick .inner>ul.df li:last-child{
+  margin-right: 0;
+} */
+#pick .inner>ul.df li:nth-child(4){box-shadow: 10px 0 15px rgb(0 0 0 / 15%);}
+#pick .inner>ul.df li:nth-child(5){box-shadow: -15px 5px 15px rgb(0 0 0 / 15%);}
