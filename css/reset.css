@@ -7,12 +7,78 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+	font-family: "ng";
+	src: url("./font/ng_9.ttf");
+  font-weight: 900;
+}
+@font-face {
+	font-family: "ng";
+	src: url("./font/ng_b.ttf");
+  font-weight: 700;
+}
+@font-face {
+	font-family: "ng";
+	src: url("./font/ng_l.ttf");
+  font-weight: 100;
+}
+@font-face {
+	font-family: "ng";
+	src: url("./font/ng_m.ttf");
+  font-weight: 500;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream1.ttf");
+  font-weight: 100;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream2.ttf");
+  font-weight: 200;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream3.ttf");
+  font-weight: 300;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream4.ttf");
+  font-weight: 400;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream5.ttf");
+  font-weight: 500;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream6.ttf");
+  font-weight: 600;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream7.ttf");
+  font-weight: 700;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream8.ttf");
+  font-weight: 800;
+}
+@font-face {
+	font-family: "score";
+	src: url("./font/SCDream9.ttf");
+  font-weight: 900;
+}
 
 * {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  word-break: keep-all;
 }
 ul,
 li,
@@ -40,8 +106,15 @@ a {
 .df {
   display: flex;
 }
+p, a, h1, h2, h3, h4, h5, h6, ul, li, tr, td, input, select, textarea, button, figure, blockquote{
+  transform: skew(-0.1deg);
+  letter-spacing: -0.03em;
+}
+
 
 body {
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
   font-family: "Nanum Brush Script", cursive;
   font-family: "Noto Sans KR", sans-serif;
   color: #555;
