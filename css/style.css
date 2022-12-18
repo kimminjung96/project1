@@ -148,5 +148,17 @@ section h4+p { font-size: 16px; color: #555;  font-weight: 300; text-align: cent
 #location .vr .vr_map{width: 50%;}
 #location .vr .vr_map img{position: absolute; display: block; top: -150px; right: -140px;}
 
+/* select */
 
-
+#select{color: #fff;}
+#select .n1{width: 33%; padding: 55px 60px; background: #cf9820; border-radius: 100px 0 0 0;}
+#select .n1 select{width: 100%;}
+#select h5{
+    font-size: 24px;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+#select p{
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
