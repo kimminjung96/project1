@@ -571,6 +571,35 @@ section h4 + p {
   border-radius: 20px;
   overflow: hidden;
 }
+#location .vr .vr_slider .vr_img{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 35px;
+    top: 45px;
+    width: 165px;
+    height: 165px;
+    padding: 10px;
+    border-radius: 50%;
+}
+#location .vr .vr_slider .vr_img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    transform: translate(-50%,-50%);
+}
+#location .vr .vr_slider::after{
+    position: absolute;
+    left: 25px;
+    top: 36px;
+    width: 179px;
+    height: 179px;
+    border-radius: 50%;
+    border: 2px solid #e9eef3;
+    content: "";
+}
 #location .vr .vr_slider .txt {
   padding: 65px 30px 30px 230px;
   font-family: "ng";
