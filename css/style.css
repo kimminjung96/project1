@@ -615,10 +615,30 @@ section h4 + p {
   margin-bottom: 8px;
   display: block;
 }
+#location .vr .vr_slider .txt p{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+}
 #location .vr .vr_slider .txt b span {
   font-size: 20px;
   color: #089788;
   font-weight: 800;
+}
+#location .vr .vr_slider .txt ul li{
+    position: relative;
+    padding: 0 0 0 20px;
+}
+/* =============================다시확인할부분================================ */
+#location .vr .vr_slider .txt ul li:first{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 19px;
+    background: url('../images/main_ir.png') 0 -30px;
 }
 #location .vr .vr_slider .vr_btn {
   width: 100%;
