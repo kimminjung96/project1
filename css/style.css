@@ -1,5 +1,4 @@
-@charset "utf-8"; 
-
+@charset "utf-8";
 /* layout */
 .inner { width: 100%; max-width: 1400px; height: inherit; margin: auto; } 
 
@@ -100,8 +99,18 @@ section#main .slider .subject .main_more { }
 section#main .slider .subject .main_more::before { } 
  */
 
-.main_btn { width: 100%; position: absolute; display: flex; justify-content: space-between; bottom: 180px; left: 0; z-index: -1; } 
+.main_btn { width: 100%; position: absolute; display: flex; justify-content: space-between; bottom: 40px; left: 0;  } 
 /* .btn_right { position: absolute; left: -180px; top: 0; } */
+.main_btn .btn_left button {font-family: 'score'; position: relative; width: 173px; height: 158px; padding: 0 10px 0 0; margin-left: 55px; font-size: 24px; color: #fff; line-height: 1.2; text-align: center; background-color: transparent; cursor: pointer; } 
+.main_btn .btn_right button {font-family: 'score'; position: relative; width: 173px; height: 158px; padding: 0 10px 0 0; margin-right: 55px; font-size: 24px; color: #fff; line-height: 1.2; text-align: center; background-color: transparent; cursor: pointer; z-index: 1;} 
+.main_btn button b { display: block; } 
+.main_btn .btn_left { padding-bottom: 265px; } 
+.main_btn .btn_left button::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ''; background: url('../images/mvisual_btn1.png'); z-index: -1; } 
+.main_btn .btn_left::after { position: absolute; left: -183px; bottom: -8px; width: 472px; height: 291px; content: ''; background: url('../images/mvisual_btn1_bg.png'); } 
+.main_btn .btn_right { padding-bottom: 265px; } 
+.main_btn .btn_right button::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ''; background: url('../images/mvisual_btn2.png'); z-index: -1; } 
+.main_btn .btn_right::after { position: absolute; right: -45px; bottom: -14px; width: 336px; height: 316px; content: ''; background: url('../images/mvisual_btn2_bg.png'); } 
+.main_btn  button:hover::before{transform: rotate(-180deg) translate(6px,4px);transition: all 1s; }
 
 /* pick */
 section#pick { position: relative; margin-bottom: 140px; padding-top: 90px; } 
@@ -111,7 +120,7 @@ section h4 span { font-weight: 900; }
 section h4 + p { font-size: 16px; color: #555; font-weight: 300; text-align: center; } 
 
 #pick .pick_btn .tab { justify-content: center; margin: 24px 0; } 
-#pick .pick_btn .tab li { position: relative; width: 170px; margin: 0 8px; background-color: #71879b; line-height: 50px; padding: 0 24px 0 20px; display: block; border-radius: 170px; }
+#pick .pick_btn .tab li { position: relative; width: 170px; margin: 0 8px; background-color: #71879b; line-height: 50px; padding: 0 24px 0 20px; display: block; border-radius: 170px; } 
 #pick .pick_btn .tab li a { padding-left: 32px; width: 100%; display: block; color: #fff; } 
 #pick .pick_btn .tab li a span { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); } 
 #pick .pick_btn .tab li:nth-child(1) a span { width: 24px; height: 28px; background: url(../images/main_ir.png) -26px 0; } 
@@ -179,11 +188,10 @@ section h4 + p { font-size: 16px; color: #555; font-weight: 300; text-align: cen
  -webkit-appearance: none; /* for chrome */
  -moz-appearance: none; /*for firefox*/
  appearance: none; box-sizing: border-box; /* //select 박스의 크기 방식 지정. */
- background: transparent; /* //배경색 투명 처리 */}
+ background: transparent; /* //배경색 투명 처리 */ } 
 
-#quick select::-ms-expand { display: none; /*for IE10,11*/}
-#quick .select_wrap { width: 100%; height: 60px; border-radius: 10px; background: #eaaf00; margin: 0 0 16px;
- position: relative; overflow: hidden; } 
+#quick select::-ms-expand { display: none; /*for IE10,11*/ } 
+#quick .select_wrap { width: 100%; height: 60px; border-radius: 10px; background: #eaaf00; margin: 0 0 16px; position: relative; overflow: hidden; } 
 
 #quick .select_wrap select option { background-color: #eaaf00; border: 1px solid #fff; } 
 #quick .select_wrap .icon1,
