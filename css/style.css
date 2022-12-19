@@ -635,6 +635,17 @@ section h4 + p {
 }
 /* quick */
 
+#quick .bg1::before{
+    position: absolute;
+    left: 0;
+    top: -317px;
+    width: 454px;
+    height: 338px;
+    background: url('../images/mcont3_il3_1.png');
+    background-size: 100%;
+    content: '';
+}
+
 #quick {
   position: relative;
   padding: 60px 0 0;
