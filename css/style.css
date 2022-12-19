@@ -671,6 +671,7 @@ section h4 + p {
   z-index: -1;
 }
 #quick h4,
+#quick h5,
 #quick p {
   color: #fff;
 }
