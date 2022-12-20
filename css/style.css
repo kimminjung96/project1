@@ -1,5 +1,4 @@
-@charset "utf-8";
-/* layout */
+@charset "utf-8"; /* layout */
 .inner { width: 100%; max-width: 1400px; height: inherit; margin: auto; } 
 
 .width1400 { margin: auto; max-width: 1400px; width: 100%; } 
@@ -8,26 +7,16 @@
 .width100 { width: 100%; } 
 
 .ir_pm { display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999999999px; } 
-.S_Core { font-family: S_Core; } 
 
 /* skip_menu */
 a { outline: none; } 
 a:focus { outline: 1px dashed red; background: #000; color: #fff; } 
-
 .skip_menu { position: fixed; left: 0; top: 0; background-color: #000; color: #fff; padding: 10px 15px; text-decoration: none; transform: translateY(-100%); } 
 .skip_menu:focus { transform: translateY(0); } 
 
 /* layer popup */
-#layer{display: block; position: fixed; width: 400px; height: 400px; background: #ccc; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 9999; font-size: 1em; padding: 3em; box-sizing: border-box; line-height: 2; top: 50px; left: 150px;}
-#layer button{
-    position: absolute;
-    cursor: pointer;
-    padding: 10px 20px;
-    right: 0;
-    top: 0;
-    background-color: #222;
-    color: #fff;
-}
+#layer { display: block; position: fixed; width: 500px; height: 300px; border-radius: 10px; background: #dcdddf; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 9999; font-size: 1.1em; padding: 3em; box-sizing: border-box; line-height: 2.5; top: 50px; left: 150px; font-family: 'score'; font-weight: 500; } 
+#layer button { position: absolute; cursor: pointer; padding: 10px 20px; left: 50%; bottom: 30px; transform: translateX(-50%); background: #3779dc; color: #fff; font-family: 'score'; font-weight: 400; } 
 
 /**************** header *****************/
 header { background-color: transparent; color: #fff; } 
@@ -87,12 +76,13 @@ nav#lnb li ul li ul li { position: relative; }
 nav#lnb li ul li ul li::after { position: absolute; width: 2px; height: 2px; display: block; background-color: #00274e; left: 20px; top: 50%; content: ""; } 
 
 /* main */
-section#main { position: relative; } 
+
+section#main { position: relative; margin-bottom: 50px; } 
 section#main::before { content: ""; display: block; background: #3779dc url("../images/mvisual_bg.png") no-repeat center bottom; background-size: 1920px; width: 150vw; height: 990px; overflow: hidden; transform: translateX(-50%); position: absolute; left: 50%; top: -180px; border-radius: 0 0 50% 50%; z-index: -999; } 
-section#main h4 { color: #fff; font-size: 24px; font-weight: 600; text-align: center; padding: 50px 0; } 
-section#main h4 span { font-size: 44px; font-weight: 300; } 
-section#main h4 .tit1:before { position: absolute; left: 670px; background-image: url(../images/mvisual_tit1.png); content: ""; display: block; width: 206px; height: 71px; } 
-section#main h4 .tit2:before { position: absolute; right: 625px; top: 36px; background-image: url(../images/mvisual_tit2.png); content: ""; display: block; width: 275px; height: 144px; } 
+section#main h5 { color: #fff; font-size: 24px; font-family: 'score'; font-weight: 600; text-align: center; padding: 50px 0; } 
+section#main h5 span { font-size: 40px; font-weight: 300; line-height: 24px; } 
+section#main h5 .tit1:before { position: absolute; left: 327px; background-image: url(../images/mvisual_tit1.png); content: ""; display: block; width: 206px; height: 71px; } 
+section#main h5 .tit2:before { position: absolute; right: 278px; top: 40px; background-image: url(../images/mvisual_tit2.png); content: ""; display: block; width: 275px; height: 144px; } 
 
 section#main .inner { padding: 0 100px; } 
 section#main .slider .slider_img { width: 1200px; height: 667px; box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; overflow: hidden; } 
@@ -111,36 +101,55 @@ section#main .slider .subject .main_more { }
 section#main .slider .subject .main_more::before { } 
  */
 
-.main_btn { width: 100%; position: absolute; display: flex; justify-content: space-between; bottom: 40px; left: 0;  } 
+.main_btn { width: 100%; position: absolute; display: flex; justify-content: space-between; bottom: 40px; left: 0; } 
 /* .btn_right { position: absolute; left: -180px; top: 0; } */
-.main_btn .btn_left button {font-family: 'score'; position: relative; width: 173px; height: 158px; padding: 0 10px 0 0; margin-left: 55px; font-size: 24px; color: #fff; line-height: 1.2; text-align: center; background-color: transparent; cursor: pointer; } 
-.main_btn .btn_right button {font-family: 'score'; position: relative; width: 173px; height: 158px; padding: 0 10px 0 0; margin-right: 55px; font-size: 24px; color: #fff; line-height: 1.2; text-align: center; background-color: transparent; cursor: pointer; z-index: 1;} 
+.main_btn .btn_left button { font-family: "score"; position: relative; width: 173px; height: 158px; padding: 0 10px 0 0; margin-left: 55px; font-size: 24px; color: #fff; line-height: 1.2; text-align: center; background-color: transparent; cursor: pointer; } 
+.main_btn .btn_right button { font-family: "score"; position: relative; width: 173px; height: 158px; padding: 0 10px 0 0; margin-right: 55px; font-size: 24px; color: #fff; line-height: 1.2; text-align: center; background-color: transparent; cursor: pointer; z-index: 1; } 
 .main_btn button b { display: block; } 
 .main_btn .btn_left { padding-bottom: 265px; } 
-.main_btn .btn_left button::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ''; background: url('../images/mvisual_btn1.png'); z-index: -1; } 
-.main_btn .btn_left::after { position: absolute; left: -183px; bottom: -8px; width: 472px; height: 291px; content: ''; background: url('../images/mvisual_btn1_bg.png'); } 
+.main_btn .btn_left button::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; background: url("../images/mvisual_btn1.png"); z-index: -1; } 
+.main_btn .btn_left::after { position: absolute; left: -183px; bottom: -8px; width: 472px; height: 291px; content: ""; background: url("../images/mvisual_btn1_bg.png"); } 
 .main_btn .btn_right { padding-bottom: 265px; } 
-.main_btn .btn_right button::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ''; background: url('../images/mvisual_btn2.png'); z-index: -1; } 
-.main_btn .btn_right::after { position: absolute; right: -45px; bottom: -14px; width: 336px; height: 316px; content: ''; background: url('../images/mvisual_btn2_bg.png'); } 
-.main_btn  button:hover::before{transform: rotate(-180deg) translate(6px,4px);transition: all 1s; }
+.main_btn .btn_right button::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; content: ""; background: url("../images/mvisual_btn2.png"); z-index: -1; } 
+.main_btn .btn_right::after { position: absolute; right: -45px; bottom: -14px; width: 336px; height: 316px; content: ""; background: url("../images/mvisual_btn2_bg.png"); } 
+.main_btn button:hover::before { transform: rotate(-180deg) translate(6px, 4px); transition: all 1s; } 
 
 /* pick */
+section h4.title { font-family: 'score'; font-weight: 300; } 
+section h4 span { font-weight: 600; } 
+
 section#pick { position: relative; margin-bottom: 140px; padding-top: 90px; } 
 section#pick::before { position: absolute; left: 55%; top: 300px; z-index: -1; width: 1850px; height: 1140px; transform: translateX(-50%); content: ""; background: url("../images/mcont2_bg.png") no-repeat; } 
+section#pick .li { position: absolute; overflow: hidden; left: 50%; top: 5px; width: 145px; height: 139px; margin-left: -270px; background: url('../images/title_bg1.png') no-repeat left bottom; } 
+section#pick .li b { display: block; position: absolute; left: -3px; bottom: -2px; width: 145px; height: 120px; background: url('../images/title_il1.png'); background-size: 100%; opacity: 1; /* 애니메이션들어가야함!!!! */}
+section#pick .li::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: url('../images/title_bg2.png') no-repeat left bottom; background-size: 100%; } 
+section#pick .ani1 { position: absolute; top: -78px; left: 200px; width: 73px; height: 73px; background: url('../images/mcont1_ani1.png'); animation: fire1 2s ease-out both infinite; transform-origin: center; animation-delay: 0.5s; } 
+@keyframes fire1 { 0%,40% { transform: scale(0); opacity: 0; } 
+ 80%,100% { transform: scale(1); opacity: 1; } 
+ }
+section#pick .ani2 { position: absolute; top: -130px; right: 470px; width: 45px; height: 45px; background: url('../images/mcont1_ani1.png'); background-size: 100%; animation: fire1 2s ease-out both infinite; transform-origin: center; } 
+@keyframes fire1 { 0%,40% { transform: scale(0); opacity: 0; } 
+ 80%,100% { transform: scale(1); opacity: 1; } 
+ }
+section#pick .ani3 { position: absolute; top: -110px; right: 160px; width: 98px; height: 98px; background: url('../images/mcont1_ani2.png'); background-size: 100%; animation: fire1 2s ease-out both infinite; transform-origin: center; animation-delay: 0.2s; } 
+@keyframes fire1 { 0%,40% { transform: scale(0); opacity: 0; } 
+ 80%,100% { transform: scale(1); opacity: 1; } 
+ }
+
 section h4 { font-size: 56px; color: #222; line-height: 1; text-align: center; font-weight: normal; margin-bottom: 5px; } 
-section h4 span { font-weight: 900; } 
-section h4 + p { font-size: 16px; color: #555; font-weight: 300; text-align: center; } 
+section h4 + p { font-size: 16px; font-family: 'ng'; line-height: 2.6; color: #555; font-weight: 300; text-align: center; } 
 
 #pick .pick_btn .tab { justify-content: center; margin: 24px 0; } 
-#pick .pick_btn .tab li { position: relative; width: 170px; margin: 0 8px; background-color: #71879b; line-height: 50px; padding: 0 24px 0 20px; display: block; border-radius: 170px; } 
-#pick .pick_btn .tab li a { padding-left: 32px; width: 100%; display: block; color: #fff; } 
-#pick .pick_btn .tab li a span { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); } 
-#pick .pick_btn .tab li:nth-child(1) a span { width: 24px; height: 28px; background: url(../images/main_ir.png) -26px 0; } 
-#pick .pick_btn .tab li:nth-child(2) a span { width: 32px; height: 28px; background: url(../images/main_ir.png) -53px 0; } 
-#pick .pick_btn .tab li:nth-child(3) a span { width: 31px; height: 28px; background: url(../images/main_ir.png) -89px 0; } 
-#pick .pick_btn .tab li:nth-child(4) a span { width: 24px; height: 28px; background: url(../images/main_ir.png) -121px 0; } 
+#pick .pick_btn .tab li { position: relative; width: 170px; margin: 0 8px; background-color: #71879b; line-height: 50px; display: block; border-radius: 170px; transition: background-color 0.3s;} 
+#pick .pick_btn .tab li:hover,#pick .pick_btn .tab li:active,#pick .pick_btn .tab li:focus{background-color: #1053a5;}
+#pick .pick_btn .tab li a { width: 100%; display: block; color: #fff; text-align: center; } 
+#pick .pick_btn .tab li a span { vertical-align: middle; margin-right: 5px; margin-bottom: 5px; content: ""; display: inline-block; } 
+#pick .pick_btn .tab li.tab1 a span { width: 24px; height: 28px; background: url(../images/main_ir.png) -26px 0; } 
+#pick .pick_btn .tab li.tab2 a span { width: 32px; height: 28px; background: url(../images/main_ir.png) -53px 0; } 
+#pick .pick_btn .tab li.tab3 a span { width: 31px; height: 28px; background: url(../images/main_ir.png) -89px 0; } 
+#pick .pick_btn .tab li.tab4 a span { width: 24px; height: 28px; background: url(../images/main_ir.png) -121px 0; } 
 
-#pick .inner { overflow: hidden; position: relative; padding-bottom: 30px; } 
+#pick .inner { position: relative; padding-bottom: 30px; } 
 
 #pick .inner > ul.df { justify-content: space-between; align-items: flex-end; margin-top: 50px; font-family: "ng"; } 
 #pick .inner > ul.df li { width: 257px; overflow: hidden; height: 328px; border-radius: 18px; box-shadow: 10px 0 15px rgb(0 0 0 / 15%); } 
@@ -158,20 +167,24 @@ section h4 + p { font-size: 16px; color: #555; font-weight: 300; text-align: cen
 #pick .inner > ul.df li .txt b { display: block; font-size: 20px; color: #3d3d3d; font-weight: 900; line-height: 1.2; letter-spacing: -0.05em; margin-bottom: 10px; } 
 
 /* location */
-#location { padding-bottom: 240px; overflow: hidden; } 
+section#location .li { position: absolute; overflow: hidden; left: 50%; top: -85px; width: 194px; height: 139px; margin-left: -260px; background: url('../images/title_bg1.png') no-repeat left bottom; } 
+section#location .li b { display: block; position: absolute; left: 0px; bottom: 0; width: 145px; height: 120px; background: url('../images/title_il2.png'); background-size: 100%; opacity: 1; /* 애니메이션들어가야함!!!! */}
+section#location .li::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: url('../images/title_bg2.png') no-repeat left bottom;} 
+section#location .li a{display: block; position: absolute; right: 0; top: 0; z-index: 1; width: 83px; height: 83px; background: url('../images/title_il2_1.png'); font-size: 0;}
+#location {position: relative; padding-bottom: 240px; } 
 #location .inner { padding: 0 100px; justify-content: space-between; } 
 #location .vr { margin-top: 60px; } 
 #location .vr .vr_slider { width: 46%; min-height: 230px; box-shadow: 5px 0 15px rgb(0 0 0 / 30%); background-color: #fff; border-radius: 20px; overflow: hidden; } 
 #location .vr .vr_slider .vr_img { overflow: hidden; display: block; position: absolute; left: 35px; top: 45px; width: 165px; height: 165px; padding: 10px; border-radius: 50%; } 
-#location .vr .vr_slider .vr_img img { position: absolute; left: 50%; top: 50%; height: 100%; width: auto; transform: translate(-50%,-50%); } 
+#location .vr .vr_slider .vr_img img { position: absolute; left: 50%; top: 50%; height: 100%; width: auto; transform: translate(-50%, -50%); } 
 #location .vr .vr_slider::after { position: absolute; left: 25px; top: 36px; width: 179px; height: 179px; border-radius: 50%; border: 2px solid #e9eef3; content: ""; } 
 #location .vr .vr_slider .txt { padding: 65px 30px 30px 230px; font-family: "ng"; color: #555; line-height: 2; } 
 #location .vr .vr_slider .txt b { font-size: 20px; color: #000; font-family: "score"; font-weight: 800; line-height: 1.4; margin-bottom: 8px; display: block; } 
 #location .vr .vr_slider .txt p { width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-bottom: 20px; } 
 #location .vr .vr_slider .txt b span { font-size: 20px; color: #089788; font-weight: 800; } 
 #location .vr .vr_slider .txt ul li { position: relative; padding: 0 0 0 20px; } 
-#location .vr .vr_slider .txt ul li:first-child span { position: absolute; left: 0; top: 50%; transform: translateY(-50%); content: ''; display: block; width: 16px; height: 19px; background: url('../images/main_ir.png') 0 -30px; } 
-#location .vr .vr_slider .txt ul li:nth-child(2) span { position: absolute; left: 0; top: 50%; transform: translateY(-50%); content: ''; display: block; width: 16px; height: 19px; background: url('../images/main_ir.png') -17px -30px; } 
+#location .vr .vr_slider .txt ul li:first-child span { position: absolute; left: 0; top: 50%; transform: translateY(-50%); content: ""; display: block; width: 16px; height: 19px; background: url("../images/main_ir.png") 0 -30px; } 
+#location .vr .vr_slider .txt ul li:nth-child(2) span { position: absolute; left: 0; top: 50%; transform: translateY(-50%); content: ""; display: block; width: 16px; height: 19px; background: url("../images/main_ir.png") -17px -30px; } 
 
 #location .vr .vr_slider .vr_btn { width: 100%; background-color: #089788; } 
 #location .vr .vr_slider .vr_btn li { width: 100%; position: relative; padding-left: 20px; } 
@@ -183,7 +196,7 @@ section h4 + p { font-size: 16px; color: #555; font-weight: 300; text-align: cen
 #location .vr .vr_map img { position: absolute; display: block; top: -150px; right: -140px; } 
 /* quick */
 
-#quick .bg1::before { position: absolute; left: 0; top: -317px; width: 454px; height: 338px; background: url('../images/mcont3_il3_1.png'); background-size: 100%; content: ''; } 
+#quick .bg1::before { position: absolute; left: 0; top: -317px; width: 454px; height: 338px; background: url("../images/mcont3_il3_1.png"); background-size: 100%; content: ""; } 
 
 #quick { position: relative; padding: 60px 0 0; margin-top: 180px; } 
 #quick .inner > .df { box-shadow: 10px 0 20px rgb(0 0 0 / 30%); border-radius: 100px 0 100px 0; margin: 30px 100px 45px; } 
@@ -246,7 +259,7 @@ section h4 + p { font-size: 16px; color: #555; font-weight: 300; text-align: cen
 #quick .icon_link .site_icon5 { background-position: -409px -67px; } 
 #quick .icon_link .site_icon6 { background-position: -511px -67px; } 
 #quick .icon_link .site_icon7 { background-position: -613px -67px; } 
-#quick .icon_link ul.df { padding: 0 100px 50px; } 
+#quick .icon_link ul.df { padding: 0 100px 80px; } 
 #quick .icon_link li { width: calc(100% / 7); } 
 
 /* footer */

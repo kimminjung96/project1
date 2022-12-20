@@ -106,7 +106,7 @@ a {
 .df {
   display: flex;
 }
-p, a, h1, h2, h3, h4, h5, h6, tr, td, input, select, textarea, button, figure, blockquote{
+p, a, h1, h2, h3, h4, h5, h6, tr, td, input, select, textarea, button, figure, blockquote,section ul,section li{
   transform: skew(-0.1deg);
   letter-spacing: -0.03em;
 }
