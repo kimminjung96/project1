@@ -17,6 +17,18 @@ a:focus { outline: 1px dashed red; background: #000; color: #fff; }
 .skip_menu { position: fixed; left: 0; top: 0; background-color: #000; color: #fff; padding: 10px 15px; text-decoration: none; transform: translateY(-100%); } 
 .skip_menu:focus { transform: translateY(0); } 
 
+/* layer popup */
+#layer{display: block; position: fixed; width: 400px; height: 400px; background: #ccc; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 9999; font-size: 1em; padding: 3em; box-sizing: border-box; line-height: 2; top: 50px; left: 150px;}
+#layer button{
+    position: absolute;
+    cursor: pointer;
+    padding: 10px 20px;
+    right: 0;
+    top: 0;
+    background-color: #222;
+    color: #fff;
+}
+
 /**************** header *****************/
 header { background-color: transparent; color: #fff; } 
 header .header_top { border-bottom: 1px solid rgba(255, 255, 255, 0.2); } 
