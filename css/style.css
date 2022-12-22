@@ -1,5 +1,6 @@
 @charset "utf-8"; 
 @import url('./reset.css');
+
 /* layout */
 .inner { width: 100%; max-width: 1400px; height: inherit; margin: auto; } 
 
@@ -21,7 +22,7 @@ a:focus { outline: 1px dashed red; background: #000; color: #fff; }
 #layer button { position: absolute; cursor: pointer; padding: 10px 20px; left: 50%; bottom: 30px; transform: translateX(-50%); background: #3779dc; color: #fff; font-family: "score"; font-weight: 400; } 
 
 /**************** header *****************/
-header { background-color: transparent; color: #fff; } 
+header { /* background-color: transparent; */ background-color: #3779dc; color: #fff; } 
 header .header_top { border-bottom: 1px solid rgba(255, 255, 255, 0.2); } 
 header .header_bot { border-bottom: 1px solid rgba(255, 255, 255, 0.2); position: relative; } 
 
@@ -81,10 +82,51 @@ nav#lnb li ul li ul li::after { position: absolute; width: 2px; height: 2px; dis
 
 section#main { position: relative; margin-bottom: 50px; } 
 section#main::before { content: ""; display: block; background: #3779dc url("../images/mvisual_bg.png") no-repeat center bottom; background-size: 1920px; width: 150vw; height: 990px; overflow: hidden; transform: translateX(-50%); position: absolute; left: 50%; top: -180px; border-radius: 0 0 50% 50%; z-index: -999; } 
-section#main h5 { color: #fff; font-size: 24px; font-family: "score"; font-weight: 600; text-align: center; padding: 50px 0; } 
+
+
+/* section#main h5 { color: #fff; font-size: 24px; font-family: "score"; font-weight: 600; text-align: center; padding: 50px 0; } 
 section#main h5 span { font-size: 40px; font-weight: 300; line-height: 24px; } 
 section#main h5 .tit1:before { position: absolute; left: 327px; background-image: url(../images/mvisual_tit1.png); content: ""; display: block; width: 206px; height: 71px; } 
 section#main h5 .tit2:before { position: absolute; right: 278px; top: 40px; background-image: url(../images/mvisual_tit2.png); content: ""; display: block; width: 275px; height: 144px; } 
+ */
+#main .title{
+    padding-top: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-family: "score";
+    font-weight: 600;
+}
+#main .title strong{
+    margin-top: -40px;
+    display: block;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+#main .title b{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    animation: top-bottom .8s both;
+}
+#main .title b:first-child{
+    top: -4px;
+    width: 206px;
+    height: 71px;
+    background: url("../images/mvisual_tit1.png");
+    font-size: 0;
+    animation-delay: 0.5s;
+}
+#main .title b:last-child{
+    top: -12px;
+    left: -30px;
+    width: 275px;
+    height: 144px;
+    background: url("../images/mvisual_tit2.png");
+    font-size: 0;
+    animation-delay: 1s;
+}
 
 section#main .inner { padding: 0 100px; } 
 section#main .slider .slider_img { width: 1200px; height: 667px; box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; overflow: hidden; } 
