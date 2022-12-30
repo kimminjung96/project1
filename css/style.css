@@ -1,6 +1,4 @@
-@charset "utf-8"; 
-@import url('./reset.css');
-
+@charset "utf-8";@import url("./reset.css");
 /* layout */
 .inner { width: 100%; max-width: 1400px; height: inherit; margin: auto; } 
 
@@ -22,7 +20,8 @@ a:focus { outline: 1px dashed red; background: #000; color: #fff; }
 #layer button { position: absolute; cursor: pointer; padding: 10px 20px; left: 50%; bottom: 30px; transform: translateX(-50%); background: #3779dc; color: #fff; font-family: "score"; font-weight: 400; } 
 
 /**************** header *****************/
-header { /* background-color: transparent; */ background-color: #3779dc; color: #fff; } 
+header { /* background-color: transparent; */
+ background-color: #3779dc; color: #fff; } 
 header .header_top { border-bottom: 1px solid rgba(255, 255, 255, 0.2); } 
 header .header_bot { border-bottom: 1px solid rgba(255, 255, 255, 0.2); position: relative; } 
 
@@ -83,55 +82,29 @@ nav#lnb li ul li ul li::after { position: absolute; width: 2px; height: 2px; dis
 section#main { position: relative; margin-bottom: 50px; } 
 section#main::before { content: ""; display: block; background: #3779dc url("../images/mvisual_bg.png") no-repeat center bottom; background-size: 1920px; width: 150vw; height: 990px; overflow: hidden; transform: translateX(-50%); position: absolute; left: 50%; top: -180px; border-radius: 0 0 50% 50%; z-index: -999; } 
 
-
 /* section#main h5 { color: #fff; font-size: 24px; font-family: "score"; font-weight: 600; text-align: center; padding: 50px 0; } 
 section#main h5 span { font-size: 40px; font-weight: 300; line-height: 24px; } 
 section#main h5 .tit1:before { position: absolute; left: 327px; background-image: url(../images/mvisual_tit1.png); content: ""; display: block; width: 206px; height: 71px; } 
 section#main h5 .tit2:before { position: absolute; right: 278px; top: 40px; background-image: url(../images/mvisual_tit2.png); content: ""; display: block; width: 275px; height: 144px; } 
  */
-#main .title{
-    padding-top: 60px;
-    text-align: center;
-    font-size: 24px;
-    color: #fff;
-    font-family: "score";
-    font-weight: 600;
-}
-#main .title strong{
-    margin-top: -40px;
-    display: block;
-    font-size: 40px;
-    line-height: 1.2;
-    font-weight: normal;
-}
-#main .title b{
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    animation: top-bottom .8s both;
-}
-#main .title b:first-child{
-    top: -4px;
-    width: 206px;
-    height: 71px;
-    background: url("../images/mvisual_tit1.png");
-    font-size: 0;
-    animation-delay: 0.5s;
-}
-#main .title b:last-child{
-    top: -12px;
-    left: -30px;
-    width: 275px;
-    height: 144px;
-    background: url("../images/mvisual_tit2.png");
-    font-size: 0;
-    animation-delay: 1s;
-}
+#main .title { padding-top: 60px; text-align: center; font-size: 24px; color: #fff; font-family: "score"; font-weight: 600; } 
+#main .title strong { margin-top: -40px; display: block; font-size: 40px; line-height: 1.2; font-weight: normal; } 
+#main .title b { display: inline-block; position: relative; vertical-align: middle; animation: top-bottom 0.8s both; } 
+#main .title b:first-child { top: -4px; width: 206px; height: 71px; background: url("../images/mvisual_tit1.png"); font-size: 0; animation-delay: 0.5s; } 
+#main .title b:last-child { top: -12px; left: -30px; width: 275px; height: 144px; background: url("../images/mvisual_tit2.png"); font-size: 0; animation-delay: 1s; } 
 
 section#main .inner { padding: 0 100px; } 
-section#main .slider .slider_img { width: 1200px; height: 667px; box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; overflow: hidden; } 
-section#main .slider img { width: 100%; height: 100%; } 
+section#main .slider_wrap { max-width: 1200px; width: 100%; height: 667px; box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; overflow: hidden; position: relative; } 
+#sliderImg { height: 100%; } 
+section#main .slider_img { position: relative; width: 100%; height: 100%; } 
+section#main .slider_img li { position: absolute; width: 100%; height: 100%; } 
+section#main .slider_img img { width: 100%; height: 100%; } 
 section#main .slider .subject { display: flex; font-size: 20px; color: #000; margin: 30px 0 0 24px; line-height: 1; } 
+
+.visual_1 { left: 0;  } 
+.visual_2 { left: 100%; } 
+.visual_3 { left: 200%; } 
+
 section#main .slider .subject b { color: #1053a5; position: relative; padding-right: 25px; font-size: 24px; font-weight: bold; letter-spacing: -1px; } 
 section#main .slider .subject b::before { content: ""; display: block; width: 1px; height: 18px; background-color: #7f7f7f; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); } 
 /* section#main .slider .subject .progress { height: 5px; width: 300px; position: absolute; } */
@@ -165,7 +138,7 @@ section h4 span { font-weight: 600; }
 section#pick { position: relative; margin-bottom: 140px; padding-top: 90px; } 
 section#pick::before { position: absolute; left: 55%; top: 340px; z-index: -1; width: 1850px; height: 1140px; transform: translateX(-50%); content: ""; background: url("../images/mcont2_bg.png") no-repeat; } 
 section#pick .li { position: absolute; overflow: hidden; left: 50%; top: 5px; width: 145px; height: 139px; margin-left: -270px; background: url("../images/title_bg1.png") no-repeat left bottom; } 
-section#pick .li b { display: block; position: absolute; left: -3px; bottom: -2px; width: 145px; height: 120px; background: url("../images/title_il1.png"); background-size: 100%; opacity: 1; /* 애니메이션들어가야함!!!! */ } 
+section#pick .li b { display: block; position: absolute; left: -3px; bottom: -2px; width: 145px; height: 120px; background: url("../images/title_il1.png"); background-size: 100%; opacity: 1; /* 애니메이션들어가야함!!!! */}
 section#pick .li::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: url("../images/title_bg2.png") no-repeat left bottom; background-size: 100%; } 
 section#pick .ani1 { position: absolute; top: -78px; left: 200px; width: 73px; height: 73px; background: url("../images/mcont1_ani1.png"); animation: fire1 2s ease-out both infinite; transform-origin: center; animation-delay: 0.5s; } 
 @keyframes fire1 { 0%,
@@ -220,7 +193,7 @@ section h4 + p { font-size: 16px; font-family: "ng"; line-height: 2.6; color: #5
 
 /* location */
 section#location .li { position: absolute; overflow: hidden; left: 50%; top: -85px; width: 194px; height: 139px; margin-left: -260px; background: url("../images/title_bg1.png") no-repeat left bottom; } 
-section#location .li b { display: block; position: absolute; left: 0px; bottom: 0; width: 145px; height: 120px; background: url("../images/title_il2.png"); background-size: 100%; opacity: 1; /* 애니메이션들어가야함!!!! */ } 
+section#location .li b { display: block; position: absolute; left: 0px; bottom: 0; width: 145px; height: 120px; background: url("../images/title_il2.png"); background-size: 100%; opacity: 1; /* 애니메이션들어가야함!!!! */}
 section#location .li::after { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: url("../images/title_bg2.png") no-repeat left bottom; } 
 section#location .li a { display: block; position: absolute; right: 0; top: 0; z-index: 1; width: 83px; height: 83px; background: url("../images/title_il2_1.png"); font-size: 0; } 
 #location { position: relative; padding-bottom: 240px; } 
@@ -251,19 +224,19 @@ section#location .li a { display: block; position: absolute; right: 0; top: 0; z
 /* quick */
 #quick .bg1 { position: absolute; left: 0; top: -303px; width: 454px; height: 338px; background: url("../images/mcont3_il3.png"); background-size: 100%; content: ""; } 
 #quick .bg1::before { position: absolute; left: 0; top: 0px; width: 100%; height: 100%; background: url("../images/mcont3_il3_1.png"); background-size: 100%; content: ""; animation: blink-1 3s both infinite; } 
-#quick .bg2 { position: absolute; left: 50%; top: -10px; width: 93px; height: 101px; background: url('../images/mcont3_il2.png'); transform: translateX(-700px); } 
-#quick .bg3 { position: absolute; left: 50%; top: -155px; width: 156px; height: 113px; background: url('../images/mcont3_il1_1.png'); background-size: 100%; transform: translateX(-290%); } 
-#quick .bg3 span.men1 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../images/mcont3_il1_2_1.png'); background-size: 100%; content: ""; } 
-#quick .bg3 span.men1::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../images/mcont3_il1_2.png'); background-size: 100%; content: ""; animation: bounce-top 2s both infinite; } 
+#quick .bg2 { position: absolute; left: 50%; top: -10px; width: 93px; height: 101px; background: url("../images/mcont3_il2.png"); transform: translateX(-700px); } 
+#quick .bg3 { position: absolute; left: 50%; top: -155px; width: 156px; height: 113px; background: url("../images/mcont3_il1_1.png"); background-size: 100%; transform: translateX(-290%); } 
+#quick .bg3 span.men1 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/mcont3_il1_2_1.png"); background-size: 100%; content: ""; } 
+#quick .bg3 span.men1::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/mcont3_il1_2.png"); background-size: 100%; content: ""; animation: bounce-top 2s both infinite; } 
 
-#quick .bg3 span.men2 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../images/mcont3_il1_3_1.png'); background-size: 100%; content: ""; } 
-#quick .bg3 span.men2::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../images/mcont3_il1_3.png'); background-size: 100%; content: ""; animation: bounce-top 2s both infinite; animation-delay: 0.5s; } 
-#quick .bg4 { position: absolute; right: 0; top: -330px; width: 379px; height: 534px; background: url('../images/mcont3_il4.png'); background-size: 100%; overflow: hidden; } 
-#quick .bg4::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../images/mcont3_il4_1.png); background-size: 100%; animation: shake-horizontal 7s cubic-bezier(.455,.03,.515,.955) both infinite; content: ''; } 
-#quick .bg4::after { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../images/mcont3_il4_2.png); background-size: 100%; animation: shake-horizontal 7s cubic-bezier(.455,.03,.515,.955) both infinite; content: ''; animation-delay: 0.5s; } 
+#quick .bg3 span.men2 { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/mcont3_il1_3_1.png"); background-size: 100%; content: ""; } 
+#quick .bg3 span.men2::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/mcont3_il1_3.png"); background-size: 100%; content: ""; animation: bounce-top 2s both infinite; animation-delay: 0.5s; } 
+#quick .bg4 { position: absolute; right: 0; top: -330px; width: 379px; height: 534px; background: url("../images/mcont3_il4.png"); background-size: 100%; overflow: hidden; } 
+#quick .bg4::before { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../images/mcont3_il4_1.png); background-size: 100%; animation: shake-horizontal 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both infinite; content: ""; } 
+#quick .bg4::after { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../images/mcont3_il4_2.png); background-size: 100%; animation: shake-horizontal 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both infinite; content: ""; animation-delay: 0.5s; } 
 
-
-#quick { position: relative; /* padding: 60px 0 0; */ margin-top: 180px; } 
+#quick { position: relative; /* padding: 60px 0 0; */
+ margin-top: 180px; } 
 #quick .inner > .df { box-shadow: 10px 0 20px rgb(0 0 0 / 30%); border-radius: 100px 0 100px 0; margin: 30px 100px 45px; } 
 
 @keyframes top-bottom { 0%,
@@ -344,13 +317,13 @@ section#location .li a { display: block; position: absolute; right: 0; top: 0; z
 #quick .n1 select { width: 100%; } 
 #quick h5 { font-size: 24px; margin-bottom: 5px; line-height: 1.2; } 
 #quick p { line-height: 1.3; margin-bottom: 30px; font-weight: 200; } 
-#quick select { width: 100%; height: 100%; padding: 0 28px 0 20px; font-size: 18px; font-weight: 600; color: #fff;cursor: pointer;  border: 0; /* //기본 스타일 제거 */
+#quick select { width: 100%; height: 100%; padding: 0 28px 0 20px; font-size: 18px; font-weight: 600; color: #fff; cursor: pointer; border: 0; /* //기본 스타일 제거 */
  -webkit-appearance: none; /* for chrome */
  -moz-appearance: none; /*for firefox*/
  appearance: none; box-sizing: border-box; /* //select 박스의 크기 방식 지정. */
- background: transparent; /* //배경색 투명 처리 */ } 
+ background: transparent; /* //배경색 투명 처리 */}
 
-#quick select::-ms-expand { display: none; /*for IE10,11*/ } 
+#quick select::-ms-expand { display: none; /*for IE10,11*/}
 #quick .select_wrap { width: 100%; height: 60px; border-radius: 10px; background: #eaaf00; margin: 0 0 16px; position: relative; overflow: hidden; } 
 
 #quick .select_wrap select option { background-color: #eaaf00; border: 1px solid #fff; } 
@@ -360,11 +333,11 @@ section#location .li a { display: block; position: absolute; right: 0; top: 0; z
 #quick .select_wrap .icon1::before { position: absolute; content: ""; display: block; width: 23px; height: 29px; left: 50%; top: 50%; transform: translate(-50%, -50%); background-image: url("../images/main_ir.png"); background-position: -96px -27px; z-index: 1; } 
 #quick .select_wrap .icon2::before { position: absolute; content: ""; display: block; width: 23px; height: 29px; left: 50%; top: 50%; transform: translate(-50%, -50%); background-image: url("../images/main_ir.png"); background-position: -122px -27px; z-index: 1; } 
 #quick .select_wrap .icon3::before { position: absolute; content: ""; display: block; width: 23px; height: 29px; left: 50%; top: 50%; transform: translate(-50%, -50%); background-image: url("../images/main_ir.png"); background-position: -148px -27px; z-index: 1; } 
-#quick .n1 a{ margin-top: 30px; background-color: #bc6c05; border-radius: 30px; line-height: 50px; font-weight: 600; color: #fff; display: block; text-align: center;} 
-#quick .n1 a::after{content: ""; display: inline-block; position: relative;  width: 17px; height: 17px; margin:0 0 3px 6px; background: url('../images/main_ir.png') -174px -28px; vertical-align: middle;}
+#quick .n1 a { margin-top: 30px; background-color: #bc6c05; border-radius: 30px; line-height: 50px; font-weight: 600; color: #fff; display: block; text-align: center; } 
+#quick .n1 a::after { content: ""; display: inline-block; position: relative; width: 17px; height: 17px; margin: 0 0 3px 6px; background: url("../images/main_ir.png") -174px -28px; vertical-align: middle; } 
 
 #quick .n2 { width: 67%; flex-wrap: wrap; } 
-#quick .n2 a { color: #fff; display: block;  padding: 40px 45px;} 
+#quick .n2 a { color: #fff; display: block; padding: 40px 45px; } 
 #quick .n2 li { width: calc(100% / 2); position: relative; } 
 #quick .n2 li:nth-child(1) { background-color: #008ce5; } 
 #quick .n2 li:nth-child(2) { background-color: #06bfcb; } 
@@ -400,27 +373,12 @@ section#location .li a { display: block; position: absolute; right: 0; top: 0; z
 /* footer */
 footer { background: url(../images/footer_bg.png) center top; margin-top: -37px; padding: 90px 0 70px; background-size: cover; text-align: center; color: #fff; font-size: 14px; font-weight: 300; } 
 footer ul { justify-content: center; padding-top: 10px; } 
-footer ul li { padding: 0 20px; position: relative;} 
-footer ul li::before{content: ""; position: absolute; right: 0;top: 50%; width: 1px; height: 14px; margin-top: -7px; background-color: #fff;}
-footer ul li:last-child:before{display: none;}
+footer ul li { padding: 0 20px; position: relative; } 
+footer ul li::before { content: ""; position: absolute; right: 0; top: 50%; width: 1px; height: 14px; margin-top: -7px; background-color: #fff; } 
+footer ul li:last-child:before { display: none; } 
 footer a { color: #fff; } 
-footer .df{
-    padding-top: 20px; 
-    width: 100%;
-    justify-content: center;
-}
-footer .df p{
-    padding-left: 20px;
-}
-footer .df p::before{
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    margin-top: -7px;
-    width: 1px;
-    height: 14px;
-    background-color: #fff;
-    content: "";
-}
+footer .df { padding-top: 20px; width: 100%; justify-content: center; } 
+footer .df p { padding-left: 20px; } 
+footer .df p::before { position: absolute; left: 10px; top: 50%; margin-top: -7px; width: 1px; height: 14px; background-color: #fff; content: ""; } 
 footer address { font-style: normal; } 
-footer address span{margin-left: 10px;}
+footer address span { margin-left: 10px; } 
