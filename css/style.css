@@ -94,12 +94,16 @@ section#main h5 .tit2:before { position: absolute; right: 278px; top: 40px; back
 #main .title b:last-child { top: -12px; left: -30px; width: 275px; height: 144px; background: url("../images/mvisual_tit2.png"); font-size: 0; animation-delay: 1s; } 
 
 section#main .inner { padding: 0 100px; } 
-section#main .slider_wrap { max-width: 1200px; width: 100%; height: 667px; box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; overflow: hidden; position: relative; } 
-#sliderImg { height: 100%; } 
+section#main .slider_wrap { max-width: 1200px; width: 100%; height: 667px;  position: relative; } 
+#sliderImg { height: 100%; width: 100%;  overflow: hidden;box-shadow: 20px 0 20px rgb(0 0 0 / 30%); border-radius: 0 0 270px 0; position: relative; } 
 section#main .slider_img { position: relative; width: 100%; height: 100%; } 
 section#main .slider_img li { position: absolute; width: 100%; height: 100%; } 
 section#main .slider_img img { width: 100%; height: 100%; } 
 section#main .slider .subject { display: flex; font-size: 20px; color: #000; margin: 30px 0 0 24px; line-height: 1; } 
+section#main .slider .subject .controls{background-color: red; width: 300px; height: ;}
+section#main .slider .subject .controls li .main_prev a{position: relative; width: 34px; height: 34px; background-color:#4d647a ; border-radius: 50%; margin: 0 4px; vertical-align: middle;}
+section#main .slider .subject .controls li .main_prev a::before{position: absolute; top: 50%; width: 9px; height: 9px; border: 1px solid #fff; border-width: 2px 2px 0 0; content: ""; margin-top: -13px; left: 41%; transform: rotate(-135deg)  translate(-50%, -50%);}
+
 
 .visual_1 { left: 0;  } 
 .visual_2 { left: 100%; } 
