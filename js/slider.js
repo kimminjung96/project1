@@ -1,10 +1,12 @@
-const visual = $("#sliderImg>ul>li");
-const button = $("#buttonList>li");
-let current = 0; //현재보고있는 놈
-let id; //setIntervalId =>자동
+$(function(){
 
-let btnIdx = 0; //클릭한 페이저 버튼의 인덱스
-const speed = 3000;
+const visual = $("#brandVisual>ul>li");
+const button = $("#buttonList>li");
+let current = 0;
+let id;
+
+let btnIdx = 0; 
+const speed = 6000;
 
 //버튼클릭함수
 button.click(function () {
@@ -40,7 +42,7 @@ function move() {
   current = btnIdx;
 }
 
-// 자동재생 멈춤 
+/* 자동재생 멈춤 */
 clearAuto();
 function clearAuto() {
   $("#brandVisual,#buttonList, .controls").mouseenter(function () {
@@ -51,7 +53,7 @@ function clearAuto() {
   });
 }
 
-// 좌우 컨트롤 버튼
+/* 좌우 컨트롤 버튼 */
 controls();
 function controls(){
   $('.controls .next').click(function(){
@@ -89,3 +91,6 @@ function controls(){
 }
 
 
+
+
+})
