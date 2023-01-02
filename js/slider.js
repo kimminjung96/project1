@@ -91,6 +91,32 @@ function controls(){
 }
 
 
+var tabWrapper = $(".tab-wrapper");
+
+tabWrapper.each(function () {
+  var currentElement = $(this);
+  var menus = currentElement.find(".pick_btn a");
+  var panels = currentElement.find(".tab-content > ul");
+
+  menus.eq(0).addClass("active");
+  panels.eq(0).show();
+
+  menus.click(function (e) {
+    e.preventDefault();
+
+    let tg = $(this);
+    let currentLink = tg.attr("href");
+    console.log(currentLink);
+
+    panels.hide();
+    $(currentLink).show();
+
+    menus.removeClass("active");
+    tg.addClass("active");
+  });
+});
+
+
 
 
 })
