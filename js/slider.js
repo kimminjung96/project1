@@ -2,8 +2,13 @@ $(function(){
 
 const visual = $("#brandVisual>ul>li");
 const button = $("#buttonList>li");
+let num=$(".slider_wrap #slider_num")
 let current = 0;
 let id;
+
+/* for(i=0;i<visual.length;i++){
+  console.log(i);
+} */
 
 let btnIdx = 0; 
 const speed = 6000;

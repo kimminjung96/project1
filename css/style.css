@@ -15,8 +15,9 @@ a:focus { outline: 1px dashed red; background: #000; color: #fff; }
 .skip_menu:focus { transform: translateY(0); } 
 
 /* layer popup */
-#layer { display: block; position: fixed; width: 500px; height: 300px; border-radius: 10px; background: #dcdddf; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 9999; font-size: 1.1em; padding: 3em; box-sizing: border-box; line-height: 2.5; top: 50px; left: 150px; font-family: "score"; font-weight: 500; } 
-#layer button { position: absolute; cursor: pointer; padding: 10px 20px; left: 50%; bottom: 30px; transform: translateX(-50%); background: #3779dc; color: #fff; font-family: "score"; font-weight: 400; } 
+#layer { display: block; position: fixed; width: 450px; height: 300px; border-radius: 6px; overflow: hidden; background: #f3f3f3; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); z-index: 9999; font-size: 1.1em;letter-spacing: -1px;text-align: center; padding:2em; box-sizing: border-box; line-height: 2.5; top: 50px; left: 150px; font-family: "score"; font-weight: 500; color: #5f5f5f;} 
+#layer strong{color: #3779dc;}
+#layer button { position: absolute; cursor: pointer; width: 100%; height: 60px; left: 50%; bottom: 0px; transform: translateX(-50%); background: #4070b8; color: #fff; font-family: "score"; font-weight: 500; font-size: 1em;} 
 
 /**************** header *****************/
 header { /* background-color: transparent; */
