@@ -6,11 +6,12 @@ let current = 0;
 let id;
 let check = false;
 let btnIdx = 0;
-const speed = 1000;
+const speed = 4000;
+
 
 let textArr=["온천","유성","축제"]
 
-num.text(visual.length)
+//num.text(visual.length)
 
 
 // play.click(() => {
@@ -44,7 +45,7 @@ timer();
 function timer() {
   id = setInterval(function () {
     let next = current + 1;
-    /* $("#slider_num2").text(current+1) */
+    
     if (next == visual.length) {
       next = 0;
     }
@@ -56,7 +57,7 @@ function timer() {
 button.click(function () {
   btnIdx = $(this).index();
 
-  $("#slider_num2").text(current+1)
+  num.text(current+1+"/"+visual.length)
 
   button.removeClass("on");
   $(this).addClass("on");
