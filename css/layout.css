@@ -1935,3 +1935,6 @@ footer address {
 footer address span {
   margin-left: 10px;
 }
+.footer_link{
+  padding: 20px 0 0;
+}
