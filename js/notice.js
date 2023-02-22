@@ -1,6 +1,6 @@
 const notice = $("#noticeSlider>li");
-const next1 = $(".next a");
-let stop = $(".stop");
+const next1 = $("notice_controls .next a");
+let stop = $(".notice_controls .stop");
 let current1 = 0;
 let stopMoving;
 let btnIdx1 = 0;
@@ -33,12 +33,12 @@ stop.click(() => {
 autoMoving();
 function autoMoving() {
 	stopMoving=setInterval(() => {
-		move(btnIdx1++);
+		move1(btnIdx1++);
 	}, speed1);
 }
 
 //슬라이드 이동시키는 함수
-function move() {
+function move1() {
   if(btnIdx1>=notice.length){
     btnIdx1=0;
   }
