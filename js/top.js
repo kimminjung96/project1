@@ -28,5 +28,4 @@ window.addEventListener("scroll", function () {
   } else {
     upImg2.classList.remove("up");
   }
-  console.log(windowScrollY > section[2].offsetTop -300 && windowScrollY < section[3].offsetTop -200);
 });

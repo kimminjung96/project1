@@ -4,7 +4,6 @@ var panels = $(".tab-content > ul");
 menus.eq(0).addClass("active");
 panels.eq(0).show().css("display","flex");
 
-console.log(panels);
 menus.click(function (e) {
   e.preventDefault();
 
