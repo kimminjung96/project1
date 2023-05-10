@@ -30,7 +30,7 @@ function checkCookie(name) {
       visited = true;
     }
   }
-  console.log(cookies, visited);
+  // console.log(cookies, visited);
   if (visited) {
     myPop.style.display = "none";
   } else {

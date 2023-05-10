@@ -8,7 +8,13 @@ let now = year + month + day;
 //getVilageFcst 단기예보
 const castBox = document.querySelector("#weather");
 let statusText, rainIcon, locText;
-rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-cloud-drizzle-fill"></i>', '<i class="bi bi-cloud-lightning-fill"></i>', '<i class="bi bi-cloud-lightning-fill"></i>', '<i class="bi bi-snow"></i>'];
+rainIcon = [
+  '<i class="bi bi-brightness-high-fill"></i>',
+  '<i class="bi bi-cloud-drizzle-fill"></i>',
+  '<i class="bi bi-cloud-lightning-fill"></i>',
+  '<i class="bi bi-cloud-lightning-fill"></i>',
+  '<i class="bi bi-snow"></i>',
+];
 
 var url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/`; /*URL*/
 let parms = {
